@@ -30,16 +30,19 @@ li a {
 li a.active {
     color: #dc91a1;
     padding: 5% 0%;
+    text-decoration: none;
 }
 
 li a:visited {
     color: #dc91a1;
     padding: 5% 0%;
+    text-decoration: none;
 }
 
 li a:hover {
     color: #ffffff;
     padding: 5% 0%;
+    text-decoration: none;
 }
 
 .social-fb {
