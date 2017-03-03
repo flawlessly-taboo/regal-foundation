@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sofia");
 body {
     margin: 0;
+    height: 100%;
 }
 ul {
     list-style-type: none;
@@ -39,4 +40,17 @@ li a:visited {
 li a:hover {
     color: #ffffff;
     padding: 5% 0%;
+}
+
+.social-fb {
+ margin-bottom: 10px;
+ width: 50px;
+ height:50px;
+ display: block;
+ background: transparent url('roseFB.png') center top no-repeat;
+}
+
+
+.social-fb:hover{
+    background-image: url('whiteFB.png');
 }
