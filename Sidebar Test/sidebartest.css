@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top:5%;
+    width: 15%;
+    background-image: url("ft_sidebarbgTILEs.png");
+    background-size: 15%;
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Sofia';
+}
+
+li a {
+    font-size: 1.875em;
+    display: block;
+    color: #dc91a1;
+    padding: 5% 0%;
+    text-decoration: none;
+}
+
+li a.active {
+    color: #dc91a1;
+   padding: 5% 0%;
+}
+
+li a:visited {
+    color: #dc91a1;
+   padding: 5% 0%;
+}
+
+li a:hover {
+    color: #ffffff;
+    padding: 5% 0%;
+}
