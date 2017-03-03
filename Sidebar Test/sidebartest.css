@@ -3,6 +3,13 @@ body {
     margin: 0;
     height: 100%;
 }
+
+.container-fluid {
+    font-family: 'Sofia';
+    color: #000000;
+    background-color: #dc91a1;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
