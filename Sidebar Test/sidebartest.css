@@ -29,12 +29,12 @@ li a {
 
 li a.active {
     color: #dc91a1;
-   padding: 5% 0%;
+    padding: 5% 0%;
 }
 
 li a:visited {
     color: #dc91a1;
-   padding: 5% 0%;
+    padding: 5% 0%;
 }
 
 li a:hover {
@@ -43,11 +43,11 @@ li a:hover {
 }
 
 .social-fb {
- margin-bottom: 10px;
- width: 50px;
- height:50px;
- display: block;
- background: transparent url('roseFB.png') center top no-repeat;
+    margin-bottom: 10px;
+    width: 50px;
+    height:50px;
+    display: block;
+    background: transparent url('roseFB.png') center top no-repeat;
 }
 
 
