@@ -33,7 +33,7 @@ li a:hover {
     color: #ffffff;
     padding: 5% 0%;
     text-decoration: none;
-}
+}   
 
 .container-fluid {
     padding-right: 0px;
@@ -117,9 +117,9 @@ li a:hover {
 
 .main-content{
     font-family: 'Oregano';
-    margin-left: 20%;
+    margin-left: 30%;
     margin-bottom: 25px;
-    margin-right: 5%;
+    margin-right: 15%;
 }
 
 .main-content a:link{
