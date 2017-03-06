@@ -47,7 +47,6 @@ li a:hover {
 }
 
 .logo {
-    float: left;
     width: 150px;
     height: 75px;
     margin: 15px;
@@ -97,7 +96,7 @@ li a:hover {
     background-position: left top;
     background-attachment: fixed;
     position: fixed;
-    top: 130px;
+    top: 30px;
     height: 100%;
     overflow: auto;
     font-family: 'Sofia';
