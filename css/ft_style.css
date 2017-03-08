@@ -49,7 +49,12 @@ li a:hover {
 }
 
 .logo {
-    margin: 15px;
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 150px;
+    height: 71px;
+    display: block;
+    background: url('ft_logo_s_pink.png'); center top no-repeat;
 }
 
 .ribbon {
@@ -89,9 +94,9 @@ li a:hover {
 .sidebar{
     margin: 0;
     padding-top:1%;
-    width: 15%;
+    width: 17%;
     background-image: url("ft_sidebarbgTILEs.png");
-    background-size: 15%;
+    background-size: 17%;
     background-repeat: repeat-y;
     background-position: left top;
     background-attachment: fixed;
