@@ -1,14 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Sofia");
 @import url("https://fonts.googleapis.com/css?family=Oregano");
+
+html{
+  position: relative;
+  min-height: 100%;
+  font-size: 14px;
+}
+
 body {
-    margin-top: 135px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     height: 100%;
     background-image: url('pantybg.jpg');
     background-repeat: repeat;
 }
 
 ul {
-    list-style-type: none;
+    margin-left: 20px;
+}
+
+li {
+  padding-bottom: 5px;
 }
 
 li a {
@@ -35,7 +47,15 @@ li a:hover {
     color: #ffffff;
     padding: 5% 0%;
     text-decoration: none;
-}   
+}  
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  background-color: white;
+} 
 
 .container-fluid {
     padding-right: 0px;
@@ -49,7 +69,27 @@ li a:hover {
 }
 
 .logo {
-    margin: 15px;
+    margin: 5px;
+}
+
+.owner{
+  padding-right: 30px; 
+  padding-bottom: 30px;
+  display: inline-block;
+  float: left;
+  clear: both;
+}
+
+.wrap{
+    width: 165px;
+    background-image: url('kiss_lite.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    /*padding-left: 561px;*/
+}
+.about-content{
+  display: inline-block;
+  margin-top: 75px;
 }
 
 .ribbon {
@@ -88,7 +128,6 @@ li a:hover {
 
 .sidebar{
     margin: 0;
-    padding-top:1%;
     width: 15%;
     background-image: url("ft_sidebarbgTILEs.png");
     background-size: 15%;
@@ -99,6 +138,7 @@ li a:hover {
     top: 30px;
     height: 100%;
     overflow: auto;
+    margin-bottom: 25px;
     font-family: 'Sofia';
 }
 
@@ -117,9 +157,8 @@ li a:hover {
 
 .main-content{
     font-family: 'Oregano';
-    margin-left: 30%;
+    margin-left: 20%;
     margin-bottom: 25px;
-    margin-right: 15%;
 }
 
 .main-content a:link{
