@@ -1,6 +1,10 @@
 # regal-foundation
 Website for clothing storefront.
 
+# About Bootstrap
+
+This site was built with [Bootstrap 4.0.0](https://v4-alpha.getbootstrap.com/).
+
 # Using Gulp
 
 Default Task
