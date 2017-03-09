@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Sofia");
-@import url("https://fonts.googleapis.com/css?family=Oregano");
 
 html{
   position: relative;
@@ -9,14 +8,20 @@ html{
 
 body {
     height: 100%;
-    background-image: url('pantybg.jpg');
-    background-repeat: repeat;
     margin-bottom: 20px;
+    font-family: calibri;
 }
 
 .site-title{
     padding-left:20px;
     color: #d44c6e;
+    font-size: 1.75em;
+}
+
+.site-sub{
+    padding-left:20px;
+    color: #d44c6e;
+    font-size: 1.0em;
 }
 
 ul {
@@ -185,10 +190,9 @@ li a:hover {
 }
 
 .main-content{
-    font-family: 'Oregano';
     margin-top: 6%;
     margin-left: 20%;
-    
+    font-size: 1.4em; 
 }
 
 .main-content a:link{
