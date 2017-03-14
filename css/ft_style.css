@@ -63,6 +63,9 @@ li a:hover {
   width: 100%;
   height: 30px;
   background-color: white;
+  position: fixed;
+  bottom: 0;
+
 }
 
 .header-top {
@@ -156,6 +159,11 @@ li a:hover {
     background-image: url('whiteFB.png');
 }
 
+.category{
+  padding-bottom: 40px;
+}
+
+
 .home {
   width: 65%;
 }
@@ -189,7 +197,7 @@ li a:hover {
 }
 
 .main-content{
-    margin-top: 6%;
+    margin-top: 5%;
     margin-left: 20%;
     font-size: 1.4em; 
 }
