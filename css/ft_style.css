@@ -12,18 +12,6 @@ body {
     font-family: calibri;
 }
 
-.site-title{
-    padding-left:20px;
-    color: #d44c6e;
-    font-size: 1.75em;
-}
-
-.site-sub{
-    padding-left:20px;
-    color: #d44c6e;
-    font-size: 1.0em;
-}
-
 ul {
     margin-left: 20px;
 }
@@ -56,7 +44,19 @@ li a:hover {
     color: #ffffff;
     padding: 5% 0%;
     text-decoration: none;
-}  
+} 
+
+.site-title{
+    padding-left:20px;
+    color: #d44c6e;
+    font-size: 1.75em;
+}
+
+.site-sub{
+    padding-left:20px;
+    color: #d44c6e;
+    font-size: 1.0em;
+} 
 
 .footer{
   font-size: 0.75em;
@@ -221,6 +221,51 @@ li a:hover {
     color: #ff4d94;
     text-decoration: none;
 }
+
+/* Dropdown Button */
+.dropbtn {
+  text-decoration: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #b03060;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (hidden until click) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #cdc9c9;
+    color: #f08080;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+/* Show the dropdown menu via JS */
+.show {display:block;}
 
 /*Media Queries, DO NOT TOUCH*/
 
