@@ -13,7 +13,7 @@ body {
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 li {
@@ -31,7 +31,6 @@ li a {
 li a:link {
     display: block;
     color: #dc91a1;
-
     text-decoration: none;
 }
 
@@ -54,15 +53,15 @@ li a:hover {
 } 
 
 .site-title{
-    padding-left:20px;
+    padding-left:2%;
     color: #d44c6e;
     font-size: 1.75em;
 }
 
 .site-sub{
-    padding-left:20px;
+    padding-left:2%;
     color: #d44c6e;
-    font-size: 1.0em;
+    font-size: 1.1em;
 } 
 
 .footer{
@@ -82,6 +81,8 @@ li a:hover {
 
 .logo {
     margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 2%;
     width: 150px;
     height: 71px;
     display: block;
