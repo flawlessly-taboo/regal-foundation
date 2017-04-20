@@ -18,3 +18,15 @@ window.onclick = function(event) {
     }
   }
 }
+
+// SimpleCart configuration
+
+simpleCart({
+    checkout: { 
+      type: "PayPal" , 
+      email: "you@yours.com" 
+    },
+    tax:    0.051,
+    currency:   "USD",
+    language: "english-us"
+});
