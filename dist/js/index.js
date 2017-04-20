@@ -1,4 +1,4 @@
-var tabooApp = angular.module('tabooApp', ['ui.router']);
+var tabooApp = angular.module('tabooApp', ['ui.router'], 'ngAnimate');
 
 tabooApp.config(function($stateProvider, $urlRouterProvider) {
 	
@@ -62,7 +62,42 @@ tabooApp.config(function($stateProvider, $urlRouterProvider) {
 
 });
 
-
-tabooApp.controller('itemCtrl', function() {
-		//lists all items on sale in a particular category
-});
+tabooApp.module('ngRepeat', ['ngAnimate'].controller('itemCtrl', function($scope) {
+	$scope.bras = [
+		{"name":"Adorable Hearts Bra", "price":"29.99", "img":"img/ProductImg/Bras/Adorable Hearts Bra.jpg"},
+		{"name":"Black and Red Bra", "price":"29.99", "img":"img/ProductImg/Bras/Black and Red Bra.jpg"},
+		{"name":"Daisy Bra", "price":"29.99", "img":"img/ProductImg/Bras/Daisy Bra.jpg"},
+		{"name":"Fish Bra", "price":"29.99", "img":"img/ProductImg/Bras/Fish Bra.jpg"},
+		{"name":"Red and Black Bra", "price":"29.99", "img":"img/ProductImg/Bras/Red and Black Bra.jpg"},
+		{"name":"Shiny Pink Bra", "price":"29.99", "img":"img/ProductImg/Bras/Shiny Pink Bra.jpg"},
+		{"name":"Sunflower Bra", "price":"29.99", "img":"img/ProductImg/Bras/Sunflower Bra.jpg"},
+		{"name":"Swedish Fish Bra", "price":"29.99", "img":"img/ProductImg/Bras/Swedish Fish Bra.jpg"},
+		{"name":"Watercolor Bra", "price":"29.99", "img":"img/ProductImg/Bras/Watercolor Bra.jpg"}
+	];
+	$scope.cheeky = [
+		{"name":"Adorable Hearts Bra", "price":"29.99", "img":"img/ProductImg/Bras/Adorable Hearts Bra.jpg"},
+		{"name":"Black and Red Bra", "price":"29.99", "img":"img/ProductImg/Bras/Black and Red Bra.jpg"},
+		{"name":"Daisy Bra", "price":"29.99", "img":"img/ProductImg/Bras/Daisy Bra.jpg"},
+		{"name":"Fish Bra", "price":"29.99", "img":"img/ProductImg/Bras/Fish Bra.jpg"},
+		{"name":"Red and Black Bra", "price":"29.99", "img":"img/ProductImg/Bras/Red and Black Bra.jpg"},
+		{"name":"Shiny Pink Bra", "price":"29.99", "img":"img/ProductImg/Bras/Shiny Pink Bra.jpg"},
+		{"name":"Sunflower Bra", "price":"29.99", "img":"img/ProductImg/Bras/Sunflower Bra.jpg"},
+		{"name":"Swedish Fish Bra", "price":"29.99", "img":"img/ProductImg/Bras/Swedish Fish Bra.jpg"},
+		{"name":"Watercolor Bra", "price":"29.99", "img":"img/ProductImg/Bras/Watercolor Bra.jpg"}
+	];
+	$scope.fullcuts = [
+		
+	];
+	$scope.lowrises = [
+		
+	];
+	$scope.sets = [
+		
+	];
+	$scope.splitbacks = [
+		
+	];
+	$scope.thongs = [
+		
+	];
+}));
