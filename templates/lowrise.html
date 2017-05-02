@@ -1,34 +1,13 @@
 <div class="row justify-content-center container-fluid">
 	        <h3 class="category">Low-Rise</h3>
         <div class="hline"></div>
-
 	<div class="product-container">
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Adorable Hearts.jpg" class="img-thumbnail img-responsive" alt="Adorable Hearts">Adorable Hearts<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Black And Red.jpg" class="img-thumbnail img-responsive" alt="Black and Red">Black and Red<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Blue Floral.jpg" class="img-thumbnail img-responsive" alt="Blue Floral">Blue Floral<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Brilliant Bouquet.jpg" class="img-thumbnail img-responsive" alt="Brilliant Bouquet">Brilliant Bouquet<p class="text-muted">$24.99</p></div>
-        </div>
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Daisy.jpg" class="img-thumbnail img-responsive" alt="Daisy">Daisy<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/English Garden.jpg" class="img-thumbnail img-responsive" alt="English Garden">English Garden<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Fishy.jpg" class="img-thumbnail img-responsive" alt="Fishy">Fishy<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Midnight Garden.jpg" class="img-thumbnail img-responsive" alt="Midnight Garden">Midnight Garden<p class="text-muted">$24.99</p></div>
-        </div>
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Paisley Passion.jpg" class="img-thumbnail img-responsive" alt="Paisley Passion">Paisley Passion<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Pastel.jpg" class="img-thumbnail img-responsive" alt="Pastel">Pastel<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Plum.jpg" class="img-thumbnail img-responsive" alt="Plum">Plum<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Red and Black.jpg" class="img-thumbnail img-responsive" alt="Red and Black">Red and Black<p class="text-muted">$24.99</p></div>
-        </div>
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Roller Skates.jpg" class="img-thumbnail img-responsive" alt="Roller Skates">Roller Skates<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Shiny Pink.jpg" class="img-thumbnail img-responsive" alt="Shiny Pink">Shiny Pink<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Sunflower.jpg" class="img-thumbnail img-responsive" alt="Sunflower">Sunflower<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Swedish Fish.jpg" class="img-thumbnail img-responsive" alt="Swedish Fish">Swedish Fish<p class="text-muted">$24.99</p></div>
-        </div>
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Sweethearts.jpg" class="img-thumbnail img-responsive" alt="Sweethearts">Sweethearts<p class="text-muted">$24.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Low-Rise/Watercolor.jpg" class="img-thumbnail img-responsive" alt="Watercolor">Watercolor<p class="text-muted">$24.99</p></div>
+        <div class="row" ng-controller="itemCtrl">
+                <div class="col-md-3" ng-repeat="low in lowrises">
+                    <img src="{{ low.img }}" class="img-thumbnail img-responsive" alt="{{ low.name }}">
+                    <p>{{ low.name }}</p>
+                    <p class="text-muted">{{ low.price }}</p>
+                </div>
         </div>              
+        </div>
 </div>

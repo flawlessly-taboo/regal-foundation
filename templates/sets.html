@@ -3,19 +3,12 @@
         <div class="hline"></div>
 
 	<div class="product-container">
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Adorable Hearts.jpg" class="img-thumbnail img-responsive" alt="Adorable Hearts">Adorable Hearts<p class="text-muted">$49.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Black And Red.jpg" class="img-thumbnail img-responsive" alt="Black and Red">Black and Red<p class="text-muted">$49.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Daisy.jpg" class="img-thumbnail img-responsive" alt="Daisy">Daisy<p class="text-muted">$49.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Fishy.jpg" class="img-thumbnail img-responsive" alt="Fishy">Fishy<p class="text-muted">$49.99</p></div>
+        <div class="row" ng-controller="itemCtrl">
+                <div class="col-md-3" ng-repeat="set in sets">
+                    <img src="{{ set.img }}" class="img-thumbnail img-responsive" alt="{{ set.name }}">
+                    <p>{{ set.name }}</p>
+                    <p class="text-muted">{{ set.price }}</p>
+                </div>
         </div>
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Red and Black.jpg" class="img-thumbnail img-responsive" alt="Red and Black">Red and Black<p class="text-muted">$49.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Shiny Pink.jpg" class="img-thumbnail img-responsive" alt="Shiny Pink">Shiny Pink<p class="text-muted">$49.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Sunflower.jpg" class="img-thumbnail img-responsive" alt="Sunflower">Sunflower<p class="text-muted">$49.99</p></div>
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Swedish Fish.jpg" class="img-thumbnail img-responsive" alt="Swedish Fish">Swedish Fish<p class="text-muted">$49.99</p></div>
-        </div>
-        <div class="row">
-                <div class="col-md-3"><img src="img/ProductImg/Sets/Watercolor.jpg" class="img-thumbnail img-responsive" alt="Watercolor">Watercolor<p class="text-muted">$49.99</p></div>
-        </div>          
+               
 </div>
