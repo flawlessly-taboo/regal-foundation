@@ -88,6 +88,14 @@ li a:hover {
     background: transparent url('ftlogopink.png') center top no-repeat;
 }
 
+.mobilelog {
+    margin-right: 10px;
+    width: 64px;
+    height: 30px;
+    display: inline-block;
+    background: transparent url('ftlogowhite.png') center top no-repeat;
+}
+
 .owner{
   padding-right: 30px; 
   padding-bottom: 30px;
@@ -159,6 +167,16 @@ li a:hover {
     text-decoration: none;
     font-family: calibri;
     padding: 0 1.0rem;
+}
+
+.mobile-title{
+    float: left;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: sofia;
+    padding: 0 2.5rem;
 }
 
 .sidebar{
@@ -234,7 +252,8 @@ li a:hover {
 .main-content{
     margin-top: 3%;
     margin-left: 20%;
-    font-size: 1.4em; 
+    font-size: 1.4em;
+    padding-top: 30px;
 }
 
 .main-content a:link{
@@ -315,7 +334,23 @@ li a:hover {
  #desknav{
   display: none !important
   }
-  
+ .ribbon{
+  height: 50px;
+  }
+
+ .home {
+  width: 80%;
+  }
+
+  .home-text{
+  padding-top: 50px;
+  margin: 0px 0px;
+  }
+
+  .main-content{
+  padding-top: 50px;
+  margin-left: 10%;
+  }
 }
 
 @media (min-width: 768px) {
