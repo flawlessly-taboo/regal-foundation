@@ -6,8 +6,8 @@
 	<meta content="Flawlessly Taboo description" name="description">
 	<title>Flawlessly Taboo</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ft_style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/ft_style.css">
   <link rel="stylesheet" type="text/css" href="css/ng-animation.css">
 </head>
 <body ng-app="tabooApp">
@@ -15,7 +15,13 @@
 	<div class="ribbon">
 	<div class="ribbon-stitches-top"></div>
 	<div class="ribbon-stitches-bottom"></div>
-<nav id="mobileNav">
+  <div class="cart">
+    <span class="cIcon fa fa-shopping-cart" aria-hidden="true"></span>
+    <div class="upper_quantity simpleCart_quantity"></div>
+    <div class="upper_total simpleCart_total"></div>
+    <a href="javascript:;" class="simpleCart_empty">Empty Cart</a>
+  </div>
+    <nav id="mobileNav">
         <a ui-sref="home" ui-sref-active="active">Home</a>
         <a ui-sref="about" ui-sref-active="active">About Us</a>
 	</div>
@@ -47,7 +53,7 @@
 </div>
 </nav>
 
-<div class="main-content home container-fluid">
+<div class="main-content home container-fluid" ng-controller="itemCtrl">
   
   <ui-view></ui-view>
 
@@ -58,18 +64,13 @@
 	</div>
 
 </div>
-
 </body>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-ui-router.min.js"></script>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/simpleCart.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/ui-bootstrap-2.5.0.min.js"></script>
 <script src="js/functions.js"></script>
 <script src="js/index.js"></script>
-<script type="text/javascript">
-  $('#tabooModal').on('shown.bs.modal', function () {
-    $('#tabooInput').focus()
-  })
-</script>
 </html>
