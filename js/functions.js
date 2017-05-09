@@ -19,6 +19,7 @@ window.onclick = function(event) {
   }
 }
 
+
 // SimpleCart configuration
 
 simpleCart({

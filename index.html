@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ft_style.css">
-  <link rel="stylesheet" type="text/css" href="css/ng-animation.css">
 </head>
 <body ng-app="tabooApp">
 <div class="header-top fixed-top"> 
@@ -16,6 +15,7 @@
 	<div class="ribbon-stitches-top"></div>
 	<div class="ribbon-stitches-bottom"></div>
 <nav id="mobileNav">
+ <button>Toggle</button>
         <a ui-sref="home" class="mobilelog" alt="Flawlessly Taboo Logo"></a>
         <p class="mobile-title">Flawlessly Taboo</p>
         <a ui-sref="home" ui-sref-active="active">Home</a>
@@ -24,6 +24,7 @@
 	</div>
 </div>
 </div>
+</nav>
 <nav id="desknav">
 <div class="container-fluid sidebar nav-wrapper">
   <a ui-sref="home" class="logo img-fluid" alt="Flawlessly Taboo Logo"></a>
@@ -66,13 +67,7 @@
 <script src="js/angular.min.js"></script>
 <script src="js/angular-ui-router.min.js"></script>
 <script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/simpleCart.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/functions.js"></script>
 <script src="js/index.js"></script>
-<script type="text/javascript">
-  $('#tabooModal').on('shown.bs.modal', function () {
-    $('#tabooInput').focus()
-  })
-</script>
 </html>

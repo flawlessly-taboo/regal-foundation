@@ -147,12 +147,33 @@ li a:hover {
 }
 
 #mobileNav{
-    float: left;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-family: calibri;
-    padding: 0 2.5rem;
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+     div
+    display: none;
+     button
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+    &.expanded
+      transform: rotate(90deg);
+      background-color: transparent;
+      border: 0;
+  a
+    display: block;
 }
 
 #mobileNav a:link, #mobileNav a:visited, #mobileNav a:active{
@@ -334,6 +355,11 @@ li a:hover {
  #desknav{
   display: none !important
   }
+
+ #mobileNav{
+  display: block;
+  }
+
  .ribbon{
   height: 50px;
   }
