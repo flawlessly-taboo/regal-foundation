@@ -162,12 +162,3 @@ tabooApp.controller('itemCtrl', function($scope) {
 		{"name":"Spring Flowers", "price":"29.99", "img":"img/ProductImg/Thongs/Spring Flowers.jpg"}
 	];
 });
-
-// angular.module('modal').controller('modalCtrl', function ($scope, $modalInstance, item) {
-//   	$scope.name = item.name;
-// 	$scope.price = item.price;
-// });
-
-tabooApp.directive('addItems', [function($scope) {
-
-}]);

@@ -292,6 +292,44 @@ li a:hover {
     text-decoration: none;
 }
 
+/* Cart CSS */
+
+.cart{
+  font-size: 12px;
+  float: right;
+  display: inline-flex;
+  background-color: pink;
+  border-radius: 15px;
+  min-width: 10%;
+  max-width: 18%;
+  margin-right: 15px;
+}
+.cIcon{
+  margin: 2px;
+}
+.upper_total{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.upper_quantity{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.cartDiv{
+  font-size: 14px;
+  margin: 0px 0px 25px -3px;
+}
+
+.cartDiv a{
+  font-size: 16px;
+}
+
+.item_Quantity{
+  width: 100px;
+}
+
+
+
 /* Dropdown Button */
 .dropbtn {
   text-decoration: none;

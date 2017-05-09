@@ -1,44 +1,27 @@
-<div class="row justify-content-center container-fluid" ng-controller="itemCtrl">
+<div class="row justify-content-center container-fluid">
 	        <h3 class="category">Bras</h3>
         <div class="hline"></div>
 
 	<div class="product-container">
         <div class="row">
-                <div class="col-md-3" ng-repeat="bra in bras">
+                <div class="col-md-4" ng-repeat="bra in bras">
                     <img src="{{ bra.img }}" class="img-thumbnail img-responsive" alt="{{ bra.name }}">
-                    <p>{{ bra.name }}</p>
-                    <p class="text-muted">{{ bra.price }}</p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tabooModal">Details</button>
+                    <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
+                        <p class="item_name">{{ bra.name }}</p>
+                        <p class="text-muted item_price">{{ bra.price }}</p>
+                        <h4>Select Size</h4>
+                        <select class="item_size">
+                            <option value="Small"> Small </option>
+                            <option value="Medium"> Medium </option>
+                            <option value="Large"> Large </option>
+                        </select>
+                        <h4>Quantity</h4>
+                        <input type="text" value="1" class="item_Quantity"><br/>
+                        <a class="item_add" href="javascript:;"> Add to Cart </a>
+                    </div>
                 </div>
+
         </div>    
    </div>
-
-
-<!-- Modal -->
-    <div class="modal fade" id="tabooModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">PRODUCT TITLE</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span></button>
-        </div>
-        <div class="modal-body">
-            <div class="col-md-6 simpleCart_shelfItem">
-                <h2>Select Size</h2>
-                <select class="item_size">
-                    <option value="Small"> Small </option>
-                    <option value="Medium"> Medium </option>
-                    <option value="Large"> Large </option>
-                </select>
-                <h2>Quantity</h2>
-                <input type="text" value="1" class="item_Quantity">
-                <span class="item_price"></span><br/>
-                <a class="item_add" href="javascript:;"> Add to Cart </a>
-            </div>
-        </div>
-        </div>
-        </div>
-    </div>
 
 </div>
