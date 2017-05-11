@@ -12,7 +12,10 @@
 </head>
 <body ng-app="tabooApp">
 <div class="header-top fixed-top"> 
-	<div class="ribbon"></div>
+	<div class="ribbon">
+               <a ui-sref="home" class="mobilelog" alt="Flawlessly Taboo Logo"></a>
+               <p class="mobile-title">Flawlessly Taboo</p>
+        </div>
 	<div class="ribbon-stitches-top"></div>
 	<div class="ribbon-stitches-bottom"></div>
   <div class="cart">
@@ -21,12 +24,23 @@
     <div class="upper_total simpleCart_total"></div>
     <a href="javascript:;" class="simpleCart_empty">Empty Cart</a>
   </div>
+
   	<nav id="mobileNav">
-        <a ui-sref="home" class="mobilelog" alt="Flawlessly Taboo Logo"></a>
-        <p class="mobile-title">Flawlessly Taboo</p>
-        <a ui-sref="home" ui-sref-active="active">Home</a>
-        <a ui-sref="about" ui-sref-active="active">About Us</a>
-        <a href="https://www.facebook.com/FlawlesslyTaboo1/">Facebook</a>
+                  <div class="navbar-header container-fluid">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+           <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+           <div class="collapse navbar-collapse" id="defaultNavbar1">
+
+           <ul class="list-unstyled navigation">
+               <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+               <li><a ui-sref="about" ui-sref-active="active">About Us</a></li>
+               <li><a href="https://www.facebook.com/FlawlesslyTaboo1/">Facebook</a></li></ul>
+           </div>
+        <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+	</nav>
 	</nav>
 </div>
 </div>

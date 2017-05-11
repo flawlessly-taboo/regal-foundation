@@ -17,7 +17,7 @@ ul {
 }
 
 li {
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 li a {
@@ -94,6 +94,7 @@ li a:hover {
     height: 30px;
     display: inline-block;
     background: transparent url('ftlogowhite.png') center top no-repeat;
+    margin-top: 5px;
 }
 
 .owner{
@@ -147,7 +148,6 @@ li a:hover {
 }
 
 #mobileNav{
-    float: left;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -170,13 +170,17 @@ li a:hover {
 }
 
 .mobile-title{
-    float: left;
+    position: center;
     display: inline-block;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-family: sofia;
     padding: 0 2.5rem;
+}
+
+#button{
+    background-image: burgercon.png;
 }
 
 .sidebar{
@@ -401,6 +405,14 @@ li a:hover {
     clear: both;
   }
   #mobileNav{
+  display: none !important
+  }
+
+  .mobilelog{
+  display: none !important
+  }
+
+  .mobile-title{
   display: none !important
   }
 }
