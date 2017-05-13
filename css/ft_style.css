@@ -403,7 +403,11 @@ li a:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
+  }
+
+
+@media (min-width: 1024px) {
   .about-text{
     display: inline-block;
     float: right;
