@@ -1,12 +1,13 @@
 <div class="row justify-content-center container-fluid">
-	        <h3 class="category">Low-Rise</h3>
+	        <h3 class="category">Sissy</h3>
         <div class="hline"></div>
+
 	<div class="product-container">
         <div class="row" ng-controller="itemCtrl">
-                <div class="col-md-4" ng-repeat="low in lowrises">
-                    <img src="{{ low.img }}" class="img-thumbnail img-responsive" alt="{{ low.name }}">
-                    <p>{{ low.name }}</p>
-                    <p class="text-muted">{{ low.price }}</p>
+                <div class="col-md-4" ng-repeat="sissy in sissies">
+                    <img src="{{ sissy.img }}" class="img-thumbnail img-responsive" alt="{{ sissy.name }}">
+                    <p>{{ sissy.name }}</p>
+                    <p class="text-muted">{{ sissy.price }}</p>
                  <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
                         <h4>Select Size</h4>
                         <select class="item_size">
@@ -23,8 +24,8 @@
                         <input type="text" value="1" class="item_Quantity">
                         <span class="item_price"></span><br/>
                         <a class="item_add" href="javascript:;"> Add to Cart </a>
-                    </div>                    
+                    </div>                
                 </div>
-        </div>              
-        </div>
+        </div>   
+   </div>
 </div>

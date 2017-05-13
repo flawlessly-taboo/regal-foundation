@@ -39,16 +39,32 @@ tabooApp.config(function($stateProvider, $urlRouterProvider) {
 		url: '/sets',
 		templateUrl: '../templates/sets.html'
 	}
-	var splitbackState = {
-		name: 'splitback',
-		url: '/splitback',
-		templateUrl: '../templates/splitback.html'
+	var peekabooState = {
+		name: 'peekaboos',
+		url: '/peekaboos',
+		templateUrl: '../templates/peekaboos.html'
 	}
 	var thongState = {
 		name: 'thongs',
 		url: '/thongs',
 		templateUrl: '../templates/thongs.html'
 	}
+	var gaffState = {
+		name: 'gaff',
+		url: '/gaff',
+		templateUrl: '../templates/gaff.html'
+	}
+	var gstringState = {
+		name: 'gstring',
+		url: '/gstring',
+		templateUrl: '../templates/thongs.html'
+	}
+	var sissyState = {
+		name: 'sissy',
+		url: '/sissy',
+		templateUrl: '../templates/sissy.html'
+	}
+
 
 	$stateProvider.state(homeState);
 	$stateProvider.state(aboutState);
@@ -57,8 +73,11 @@ tabooApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state(fullcutState);
 	$stateProvider.state(lowriseState);
 	$stateProvider.state(setState);
-	$stateProvider.state(splitbackState);
+	$stateProvider.state(peekabooState);
 	$stateProvider.state(thongState);
+	$stateProvider.state(gaffState);
+	$stateProvider.state(gstringState);
+	$stateProvider.state(sissyState);
 
 });
 
@@ -142,7 +161,7 @@ tabooApp.controller('itemCtrl', function($scope) {
 		{"name":"Swedish Fish", "price":"29.99", "img":"img/ProductImg/Sets/Swedish Fish.jpg"},
 		{"name":"Watercolor", "price":"29.99", "img":"img/ProductImg/Sets/Watercolor.jpg"}
 	];
-	$scope.splitbacks = [
+	$scope.peekaboos = [
 		{"name":"Adorable Hearts", "price":"29.99", "img":"img/ProductImg/Split-Back/Adorable Hearts.jpg"},
 		{"name":"English Garden", "price":"29.99", "img":"img/ProductImg/Split-Back/English Garden.jpg"},
         {"name":"Fishy", "price":"29.99", "img":"img/ProductImg/Split-Back/Fishy.jpg"},
