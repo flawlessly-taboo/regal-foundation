@@ -1,0 +1,31 @@
+<div class="row justify-content-center container-fluid">
+	        <h3 class="category">Boxer</h3>
+        <div class="hline"></div>
+
+	<div class="product-container">
+        <div class="row" ng-controller="itemCtrl">
+                <div class="col-md-4" ng-repeat="sissy in sissies">
+                    <img src="{{ boxer.img }}" class="img-thumbnail img-responsive" alt="{{ boxer.name }}">
+                    <p>{{ boxer.name }}</p>
+                    <p class="text-muted">{{ boxer.price }}</p>
+                 <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
+                        <h4>Select Size</h4>
+                        <select class="item_size">
+                            <option value="Small"> Small </option>
+                            <option value="Medium"> Medium </option>
+                            <option value="Large"> Large </option>
+                            <option value="X-Large"> X-Large </option>
+                            <option value="2X"> 2X </option>
+                            <option value="2X"> 3X </option>
+                            <option value="2X"> 4X </option>
+                            <option value="2X"> 5X </option>
+                        </select>
+                        <h4>Quantity</h4>
+                        <input type="text" value="1" class="item_Quantity">
+                        <span class="item_price"></span><br/>
+                        <a class="item_add" href="javascript:;"> Add to Cart </a>
+                    </div>                
+                </div>
+        </div>   
+   </div>
+</div>

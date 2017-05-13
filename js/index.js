@@ -57,12 +57,17 @@ tabooApp.config(function($stateProvider, $urlRouterProvider) {
 	var gstringState = {
 		name: 'gstring',
 		url: '/gstring',
-		templateUrl: '../templates/thongs.html'
+		templateUrl: '../templates/gstring.html'
 	}
 	var sissyState = {
 		name: 'sissy',
 		url: '/sissy',
 		templateUrl: '../templates/sissy.html'
+	}
+	var boxerState = {
+		name: 'boxer',
+		url: '/boxer',
+		templateUrl: '../templates/boxer.html'
 	}
 
 
@@ -78,6 +83,7 @@ tabooApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state(gaffState);
 	$stateProvider.state(gstringState);
 	$stateProvider.state(sissyState);
+	$stateProvider.state(boxerState);
 
 });
 

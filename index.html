@@ -13,33 +13,43 @@
 <body ng-app="tabooApp">
 <div class="header-top fixed-top"> 
 	<div class="ribbon">
-               <a ui-sref="home" class="mobilelog" alt="Flawlessly Taboo Logo"></a>
-               <p class="mobile-title">Flawlessly Taboo</p>
-	<div class="ribbon-stitches-top"></div>
-	<div class="ribbon-stitches-bottom"></div>
-  <div class="cart">
-    <span class="cIcon fa fa-shopping-cart" aria-hidden="true"></span>
-    <div class="upper_quantity simpleCart_quantity"></div>
-    <div class="upper_total simpleCart_total"></div>
-    <a href="javascript:;" class="simpleCart_empty">Empty Cart</a>
+    <a ui-sref="home" class="mobilelog" alt="Flawlessly Taboo Logo"></a>
+    <p class="mobile-title">Flawlessly Taboo</p>
+    <div class="ribbon-stitches-top"></div>
+    <div class="ribbon-stitches-bottom"></div>
+    <nav id="mobileNav" class="navbar navbar-toggleable-xl navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="nav-content">   
+        <ul class="navbar-nav">
+          <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+          <li><a ui-sref="about" ui-sref-active="active">About Us</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+          <div class="dropdown-menu">
+            <a ui-sref="boxer" ui-sref-active="active">Boxers</a>          
+            <a ui-sref="bras" ui-sref-active="active">Bras</a>
+            <a ui-sref="cheeky" ui-sref-active="active">Cheeky</a>
+            <a ui-sref="fullcut" ui-sref-active="active">Full Cut</a>
+            <a ui-sref="gaff" ui-sref-active="active">Gaff</a>    
+            <a ui-sref="gstring" ui-sref-active="active">G-String</a>                    
+            <a ui-sref="lowrise" ui-sref-active="active">Low Rise</a>
+            <a ui-sref="peekaboos" ui-sref-active="active">Peekaboo</a>            
+            <a ui-sref="sets" ui-sref-active="active">Sets</a>
+            <a ui-sref="sissy" ui-sref-active="active">Sissy</a>
+            <a ui-sref="thongs" ui-sref-active="active">Thongs</a>
+          </div>
+          </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="cart">
+      <span class="cIcon fa fa-shopping-cart" aria-hidden="true"></span>
+      <div class="upper_quantity simpleCart_quantity"></div>
+      <div class="upper_total simpleCart_total"></div>
+      <a href="javascript:;" class="simpleCart_empty">Empty Cart</a>
+    </div>
   </div>
 </div>
-<nav id="mobileNav">
-  <div class="navbar-header container-fluid">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
-    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-  </div>
-  <div class="collapse navbar-collapse" id="defaultNavbar1">
-    <ul class="list-unstyled navigation">
-      <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
-      <li><a ui-sref="about" ui-sref-active="active">About Us</a></li>
-      <li><a href="https://www.facebook.com/FlawlesslyTaboo1/">Facebook</a></li>
-    </ul>
-  </div>
-</nav>        <!-- /.navbar-collapse -->
-</div>
-        <!-- /.container-fluid -->
-
 <nav id="desknav">
 <div class="container-fluid sidebar nav-wrapper">
   <a ui-sref="home" class="logo img-fluid" alt="Flawlessly Taboo Logo"></a>
@@ -53,6 +63,7 @@
   			<div class="dropdown">
   				<a href="javascript:void(0)" onclick="prodFunction()" class="dropbtn">Products</a>
   				<div id="products" class="dropdown-content">
+            <a ui-sref="boxer" ui-sref-active="active">Boxers</a>          
   					<a ui-sref="bras" ui-sref-active="active">Bras</a>
   					<a ui-sref="cheeky" ui-sref-active="active">Cheeky</a>
   					<a ui-sref="fullcut" ui-sref-active="active">Full Cut</a>

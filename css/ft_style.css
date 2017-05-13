@@ -148,15 +148,19 @@ li a:hover {
 }
 
 #mobileNav{
-    display: inline-block;
-    text-align: center;
     text-decoration: none;
     font-family: calibri;
     padding: 0 2.5rem;
+    float: left;
+    margin-left: 20px;
+}
+
+#mobileNav ul{
+  display: inline-block;
 }
 
 #mobileNav a:link, #mobileNav a:visited, #mobileNav a:active{
-    color: #ffffff;
+
     text-decoration: none;
     font-family: calibri;
     padding: 0 1.0rem;
@@ -177,10 +181,6 @@ li a:hover {
     text-decoration: none;
     font-family: sofia;
     padding: 0 2.5rem;
-}
-
-#button{
-    background-image: burgercon.png;
 }
 
 .sidebar{
@@ -372,6 +372,12 @@ li a:hover {
 /*Media Queries, DO NOT TOUCH*/
 
 @media (max-width: 736px) {
+  .carouselContainer{
+    display: none;
+  }
+  .cart{
+    display: none;
+  }
   .sidebar{
 
   }
@@ -379,7 +385,7 @@ li a:hover {
   display: none !important
   }
  .ribbon{
-  height: 50px;
+    height: 50px;
   }
 
  .home {
@@ -407,14 +413,14 @@ li a:hover {
     clear: both;
   }
   #mobileNav{
-  display: none !important
+    display: none;
   }
 
   .mobilelog{
-  display: none !important
+    display: none;
   }
 
   .mobile-title{
-  display: none !important
+    display: none; 
   }
 }
