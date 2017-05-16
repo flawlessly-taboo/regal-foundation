@@ -22,6 +22,17 @@ window.onclick = function(event) {
 // SimpleCart configuration
 
 simpleCart({
+
+  cartColumns: [
+        { attr: "name", label: "Name"},
+        { view: "currency", attr: "price", label: "Price"},
+        { view: "decrement", label: false},
+        { attr: "quantity", label: "Qty"},
+        { view: "increment", label: false},
+        { view: "currency", attr: "total", label: "SubTotal" },
+        { view: "remove", text: "Remove", label: false}
+    ],
+    cartStyle: "table", 
     checkout: { 
       type: "PayPal" , 
       email: "you@yours.com" 

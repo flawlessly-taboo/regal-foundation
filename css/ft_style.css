@@ -366,6 +366,10 @@ li a:hover {
     display: block;
   }
 
+.product-container{
+  width: 80%;
+}
+
 /* Show the dropdown menu via JS */
 .show {display:block;}
 

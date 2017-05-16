@@ -6,8 +6,8 @@
         <div class="row" ng-controller="itemCtrl">
                 <div class="col-md-4" ng-repeat="sissy in sissies">
                     <img src="{{ boxer.img }}" class="img-thumbnail img-responsive" alt="{{ boxer.name }}">
-                    <p>{{ boxer.name }}</p>
-                    <p class="text-muted">{{ boxer.price }}</p>
+                    <p class="item_name">{{ boxer.name }}</p>
+                    <p class="text-muted item_price">{{ boxer.price }}</p>
                  <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
                         <h4>Select Size</h4>
                         <select class="item_size">
