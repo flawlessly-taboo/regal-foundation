@@ -35,7 +35,11 @@ simpleCart({
     cartStyle: "table", 
     checkout: { 
       type: "PayPal" , 
-      email: "you@yours.com" 
+      email: "you@yours.com",        
+      // use paypal sandbox, default is false
+      sandbox: true , 
+      // http method for form, "POST" or "GET", default is "POST"
+      method: "GET"
     },
     tax:    0.051,
     currency:   "USD",

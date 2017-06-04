@@ -108,7 +108,10 @@ tabooApp.controller('itemCtrl', function($scope, $state) {
 	// 	})
 	// }
 
-	//$state.reload();
+	$scope.reloadRoute = function() {
+    	$state.reload();
+    	//$window.location.reload();
+	}
 
 	$scope.bras = [
 		{"name":"Adorable Hearts Bra", "price":"29.99", "img":"img/ProductImg/Bras/Adorable Hearts Bra.jpg"},
