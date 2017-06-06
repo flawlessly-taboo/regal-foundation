@@ -365,15 +365,21 @@ li a:hover {
     text-decoration: none;
     display: block;
   }
-
-.product-container{
-  width: 80%;
-}
-
 /* Show the dropdown menu via JS */
 .show {display:block;}
 
-/*Media Queries, DO NOT TOUCH*/
+/*Cart display styling*/
+.product-container{
+  width: 95%;
+}
+.simplecart_items table.headerRow tr th{
+  width: 225px;
+}
+.simplecart_items table.itemRow{
+
+}
+
+/*Media Queries*/
 
 @media (max-width: 736px) {
   .carouselContainer{

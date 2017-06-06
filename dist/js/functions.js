@@ -3,6 +3,7 @@ toggle between hiding and showing the dropdown content */
 function prodFunction() {
     document.getElementById("products").classList.toggle("show");
 }
+lightGallery(document.getElementById('lightgallery'));
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
@@ -29,8 +30,10 @@ simpleCart({
         { view: "decrement", label: false},
         { attr: "quantity", label: "Qty"},
         { view: "increment", label: false},
+        { view: "size", attr: "size", label: "Size"},
+        { view: "panty", attr: "panty", label: "Panty Type" },
         { view: "currency", attr: "total", label: "SubTotal" },
-        { view: "remove", text: "Remove", label: false}
+        { view: "remove", text: "Remove", label: false }
     ],
     cartStyle: "table", 
     checkout: { 
