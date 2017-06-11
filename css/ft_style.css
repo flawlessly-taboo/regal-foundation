@@ -147,12 +147,23 @@ li a:hover {
    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
 }
 
+.navbar-toggler{
+  z-index: 2;
+  position: absolute;
+}
+
+.fa-bars{
+  color: white;
+}
+
 #mobileNav{
     text-decoration: none;
     font-family: calibri;
-    padding: 0 2.5rem;
     float: left;
     margin-left: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    overflow-y: auto;
 }
 
 #mobileNav ul{
@@ -174,13 +185,11 @@ li a:hover {
 }
 
 .mobile-title{
-    position: center;
     display: inline-block;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-family: sofia;
-    padding: 0 2.5rem;
 }
 
 .sidebar{
@@ -397,6 +406,9 @@ li a:hover {
  .ribbon{
     height: 50px;
   }
+  .ribbon-stitches-top, .ribbon-stitches-bottom{
+    display: none;
+  }
 
  .home {
   width: 80%;
@@ -410,6 +422,9 @@ li a:hover {
   .main-content{
   padding-top: 50px;
   margin-left: 10%;
+  }
+  .footer{
+    font-size: 0.5em;
   }
 }
 

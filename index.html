@@ -16,16 +16,16 @@
 	<div class="ribbon">
     <a ui-sref="home" class="mobilelog" alt="Flawlessly Taboo Logo"></a>
     <p class="mobile-title">Flawlessly Taboo</p>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-label="Toggle navigation"><i class="fa fa-2x fa-bars" aria-hidden="true"></i></button>
     <div class="ribbon-stitches-top"></div>
     <div class="ribbon-stitches-bottom"></div>
-    <nav id="mobileNav" class="navbar navbar-toggleable-xl navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <!-- Links -->
-      <div class="collapse navbar-collapse" id="nav-content">   
+      <div class="navbar-collapse collapse" aria-expanded="false" id="nav-content"> 
+        <nav id="mobileNav" class="navbar-toggleable-xl navbar-light bg-faded">  
         <ul class="navbar-nav">
           <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
           <li><a ui-sref="about" ui-sref-active="active">About Us</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true">Products</a>
           <div class="dropdown-menu">
             <a ui-sref="boxer" ui-sref-active="active">Boxers</a>          
             <a ui-sref="bras" ui-sref-active="active">Bras</a>
@@ -40,9 +40,10 @@
             <a ui-sref="thongs" ui-sref-active="active">Thongs</a>
           </div>
           </li>
+          <li><a ng-click="reloadRoute()" ui-sref="checkout" ui-sref-active="active">My Cart</a></li>
         </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <div class="cart">
       <span class="cIcon fa fa-shopping-cart" aria-hidden="true"></span>
       <div class="upper_quantity simpleCart_quantity"></div>
@@ -77,7 +78,7 @@
   					<a ui-sref="thongs" ui-sref-active="active">Thongs</a>
   				</div>
         </li>
-        <li><a ng-click="reloadRoute()" ui-sref="checkout" ui-sref-active="active">Checkout</a></li>
+        <li><a ng-click="reloadRoute()" ui-sref="checkout" ui-sref-active="active">My Cart</a></li>
   		  <li><a href="https://www.facebook.com/FlawlesslyTaboo1/" class="social-fb" alt="Our Facebook Page"></a></li>
    </ul>
 </div>

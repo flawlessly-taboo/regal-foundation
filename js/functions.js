@@ -3,7 +3,7 @@ toggle between hiding and showing the dropdown content */
 function prodFunction() {
     document.getElementById("products").classList.toggle("show");
 }
-lightGallery(document.getElementById('lightgallery'));
+//lightGallery(document.getElementById('lightgallery'));
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
