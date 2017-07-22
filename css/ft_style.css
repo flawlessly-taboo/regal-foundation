@@ -452,4 +452,7 @@ li a:hover {
   .mobile-title{
     display: none; 
   }
+  .navbar-toggler{
+    display:none;
+  }
 }
