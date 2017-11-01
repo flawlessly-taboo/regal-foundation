@@ -5,7 +5,8 @@
 	<div class="product-container">
         <div class="row" ng-controller="itemCtrl">
                 <div class="col-md-4" ng-repeat="gaff in gaff">
-                    <img src="{{ gaff.img }}" class="img-thumbnail img-responsive" alt="{{ gaff.name }}">
+                    <a href="{{ gaff.img }}" data-toggle="lightbox" data-gallery="hidden-images" data-type="image"><img src="{{ gaff.img }}" class="img-thumbnail img-responsive" alt="{{ gaff.name }}"></a>
+                    <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="{{ gaff.hideImg }}" data-type="image"></div>
                     
                  <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
                     <p class="item_name">{{ gaff.name }}</p>

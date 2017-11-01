@@ -5,7 +5,8 @@
 	<div class="product-container">
         <div class="row" ng-controller="itemCtrl">
                 <div class="col-md-4" ng-repeat="thong in thongs">
-                    <img src="{{ thong.img }}" class="img-thumbnail img-responsive" alt="{{ thong.name }}">
+                    <a href="{{ thong.img }}" data-toggle="lightbox" data-gallery="hidden-images" data-type="image"><img src="{{ thong.img }}" class="img-thumbnail img-responsive" alt="{{ thong.name }}"></a>
+                    <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="{{ thong.hideImg }}" data-type="image"></div>
                     
                  <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
                     <p class="item_name">{{ thong.name }}</p>

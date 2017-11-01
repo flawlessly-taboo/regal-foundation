@@ -5,7 +5,8 @@
 	<div class="product-container">
         <div class="row" ng-controller="itemCtrl">
                 <div class="col-md-4" ng-repeat="set in sets">
-                    <img src="{{ set.img }}" class="img-thumbnail img-responsive" alt="{{ set.name }}">
+                  <a href="{{ set.img }}" data-toggle="lightbox" data-gallery="hidden-images" data-type="image"><img src="{{ set.img }}" class="img-thumbnail img-responsive" alt="{{ set.name }}"></a>
+                    <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="{{ set.hideImg }}" data-type="image"></div>
                  <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
                     <p class="item_name">{{ set.name }}</p>
                     <p class="text-muted item_price">{{ set.price }}</p>
