@@ -9,9 +9,9 @@
                     <div data-toggle="lightbox" data-gallery="hidden-images" data-remote="{{ full.hideImg }}" data-type="image"></div>                    
                  <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
                     <p class="item_name">{{ full.name }}</p>
-                    <p class="text-muted item_price">{{ full.price }}</p>
+                    <p id="{{ full.id }}" class="text-muted item_price">{{ full.price }}</p>
                         <h4>Select Size</h4>
-                        <select class="item_size">
+                        <select id="sizing{{full.id}}" class="item_size" ng-model="size" ng-change="priceCheck({{ full.id }})">
                             <option value="Small"> Small </option>
                             <option value="Medium"> Medium </option>
                             <option value="Large"> Large </option>

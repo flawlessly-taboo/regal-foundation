@@ -9,9 +9,9 @@
                     
                  <div class="col-md-6 simpleCart_shelfItem cartDiv" style="padding-left:0px;">
                     <p class="item_name">{{ low.name }}</p>
-                    <p class="text-muted item_price">{{ low.price }}</p>
+                    <p id="{{ low.id }}" class="text-muted item_price">{{ low.price }}</p>
                         <h4>Select Size</h4>
-                        <select class="item_size">
+                        <select id="sizing{{low.id}}" class="item_size" ng-model="size" ng-change="priceCheck({{ low.id }})">
                             <option value="Small"> Small </option>
                             <option value="Medium"> Medium </option>
                             <option value="Large"> Large </option>
