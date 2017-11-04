@@ -338,7 +338,7 @@ function initSimpleCart(){
 		      type: "PayPal" , 
 		      email: "you@yours.com",        
 		      // use paypal sandbox, default is false
-		      sandbox: true , 
+		      sandbox: false , 
 		      // http method for form, "POST" or "GET", default is "POST"
 		      method: "GET"
 		    },
