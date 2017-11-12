@@ -316,10 +316,40 @@ li a:hover {
   font-size: 16px;
 }
 
-.item_Quantity{
-  width: 100px;
+.totals{
+  float: right;
+  clear: both;
+  width: 40%;
+  margin-top: 20px;
+  text-align: right;
+}
+.checkout{
+  clear: both;
+  float: left;
+  color: #888;
+  font-size: 0.8em;
+}
+.checkout-num{
+  font-size: 0.8em;
 }
 
+.purchase{
+  padding: 15px 30px;
+  font-size: 30px;
+  float: right;
+  clear: both;
+}
+.purchase:hover {
+  background-color: pink;
+  color: white;
+}
+.form-control{
+  border: 0px solid black;
+}
+
+.simpleCart_total, .simpleCart_quantity, .simpleCart_tax, .simpleCart_shipping, .simpleCart_grandTotal{
+  /*width: 20%;*/
+}
 
 
 /* Dropdown Button */

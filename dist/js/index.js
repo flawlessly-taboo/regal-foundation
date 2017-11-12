@@ -342,7 +342,8 @@ function initSimpleCart(){
 		      // http method for form, "POST" or "GET", default is "POST"
 		      method: "GET"
 		    },
-		    tax:    0.051,
+		    shippingFlatRate: 5,
+		    taxRate:    0.051,
 		    currency:   "USD",
 		    language: "english-us"
 		});
